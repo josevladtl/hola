@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hola.Login">
+    <ContentPage.Content>
+        <StackLayout  HorizontalOptions="Center">
+            <Frame BackgroundColor="#2196F3" Padding="18" CornerRadius="0">
+                <Label Text="CONSULTORIO ODONTOLOGICO LLANO GRANDE" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+           </Frame>
+            
+            <Image Source="https://enbatadental.com/wp-content/uploads/2021/04/OPERACION.jpg"/>
+            
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese Usuario"/>
+            <Entry x:Name="txtContrasena" Placeholder="Ingrese contrasena" IsPassword="True" />
+            <Button x:Name="btnIniciar" Text="Iniciar Sesion" Clicked="btnIniciar_Clicked"/>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

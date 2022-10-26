@@ -18,9 +18,14 @@ namespace hola
         }
 
         private void btnIniciar_Clicked(object sender, EventArgs e)
+
+
+
         {
-            string usuario = "vladi";
-            string contrasena = "1234";
+            Navigation.PushAsync(new Registro());
+
+            string usuario = "estudiante2022";
+            string contrasena = "uisrael2022";
 
             string tUsuario = txtUsuario.Text;
             string tContrasena = txtContrasena.Text;
@@ -28,6 +33,7 @@ namespace hola
             if (usuario == tUsuario & contrasena == tContrasena)
             {
                 DisplayAlert("Alerta", "USUARIO CORRECTO", "Cerrar");
+                
             }
             else
             {

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hola.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            
+            <Label Text="ventana de Registro"
+                
+                HorizontalOptions="CenterAndExpand" FontSize="Medium" BackgroundColor="Yellow" />
+
+            <Entry x:Name="txtNombre" Placeholder= "Ingrese su Nombre"/>
+            <Entry x:Name="txtApellido"  Placeholder="Ingrese su Apellido"/>
+            <Entry x:Name="txtNota" Placeholder="Ingrese su Nota Final" Keyboard="Numeric"/>
+
+            <Button x:Name="btnInformacion" Text="Mostrar Informacion" Clicked="btnInformacion_Clicked"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
